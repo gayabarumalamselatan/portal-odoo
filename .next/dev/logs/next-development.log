@@ -1,0 +1,393 @@
+[00:00:00.774] Server  LOG      ✓ Ready in 500ms
+[00:00:03.075] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.211] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:03.211] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:03.211] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764659662844}
+[00:00:04.461] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.590] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:04.590] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:04.590] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764659664214}
+[00:00:07.171] Server  LOG      ✓ Compiled in 253ms
+[00:00:09.921] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:10.056] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:10.056] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:10.056] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764659669681}
+[00:00:13.650] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:13.772] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:13.772] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:13.772] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764659673399}
+[00:00:14.918] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/start-order color: rgb(120, 120, 120) color: inherit {"dp":"/start-order","o":"http://localhost:3000/start-order","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764659674554}
+[00:00:17.417] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:17.531] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:17.531] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/start-order","route":"/start-order"}
+[00:00:17.531] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/start-order color: rgb(120, 120, 120) color: inherit {"dp":"/start-order","o":"http://localhost:3000/start-order","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764659677165}
+[00:00:18.801] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764659678430}
+[00:00:37.873] Server  LOG      ✓ Compiled in 89ms
+[00:00:41.089] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:41.205] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:41.205] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:41.205] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764659700837}
+[00:00:58.264] Server  LOG      ✓ Compiled in 37ms
+[00:01:08.603] Server  LOG      ✓ Compiled in 34ms
+[00:01:11.728] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:11.860] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:11.860] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:01:11.860] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764659731486}
+[00:02:11.343] Server  LOG      ✓ Compiled in 72ms
+[00:02:38.816] Server  LOG      ✓ Compiled in 43ms
+[00:10:32.660] Server  LOG      ✓ Compiled in 86ms
+[00:10:43.366] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/start-order color: rgb(120, 120, 120) color: inherit {"dp":"/start-order","o":"http://localhost:3000/start-order","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660302996}
+[00:10:44.628] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660304259}
+[00:11:13.109] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/start-order color: rgb(120, 120, 120) color: inherit {"dp":"/start-order","o":"http://localhost:3000/start-order","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660332743}
+[00:11:26.291] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:26.419] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:11:26.419] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/order-form","route":"/order-form"}
+[00:11:26.419] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/order-form color: rgb(120, 120, 120) color: inherit {"dp":"/order-form","o":"http://localhost:3000/order-form","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660346042}
+[00:12:04.623] Server  LOG      ✓ Compiled in 40ms
+[00:12:10.399] Server  LOG      ✓ Compiled in 34ms
+[00:12:20.771] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:20.771] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="order-trac..." loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/order-tra..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+              <SegmentViewNode type="page" pagePath="order-trac...">
+                <SegmentTrieNode>
+                <Page>
+                  <OrderTrackingPage>
+                    <div className="min-h-scre...">
+                      <div className="max-w-4xl ...">
+                        <LinkComponent>
+                        <Card className="p-6 mb-8 b...">
+                          <div data-slot="card" className="bg-card te...">
+                            <div className="flex items...">
+                              <div>
+                                <p>
+                                <h1 className="text-3xl font-bold text-foreground mb-4">
++                                 ORD-1764660400493
+-                                 ORD-1764660400358
+                                ...
+                        ...
+              ...
+            ...
+
+[00:12:20.891] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:20.891] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/order-tracking","route":"/order-tracking"}
+[00:12:20.891] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/order-tracking","route":"/order-tracking"}
+[00:12:20.891] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/order-tracking color: rgb(120, 120, 120) color: inherit {"dp":"/order-tracking","o":"http://localhost:3000/order-tracking","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660400523}
+[00:12:20.891] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/order-tracking color: rgb(120, 120, 120) color: inherit {"dp":"/order-tracking","o":"http://localhost:3000/order-tracking","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660400523}
+[00:12:27.328] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:27.470] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:27.470] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin","route":"/admin"}
+[00:12:27.470] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660407104}
+[00:12:37.959] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:37.959] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="order-trac..." loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/order-tra..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+              <SegmentViewNode type="page" pagePath="order-trac...">
+                <SegmentTrieNode>
+                <Page>
+                  <OrderTrackingPage>
+                    <div className="min-h-scre...">
+                      <div className="max-w-4xl ...">
+                        <LinkComponent>
+                        <Card className="p-6 mb-8 b...">
+                          <div data-slot="card" className="bg-card te...">
+                            <div className="flex items...">
+                              <div>
+                                <p>
+                                <h1 className="text-3xl font-bold text-foreground mb-4">
++                                 ORD-1764660417682
+-                                 ORD-1764660417558
+                                ...
+                        ...
+              ...
+            ...
+
+[00:12:38.087] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:38.087] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/order-tracking","route":"/order-tracking"}
+[00:12:38.087] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/order-tracking","route":"/order-tracking"}
+[00:12:38.087] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/order-tracking color: rgb(120, 120, 120) color: inherit {"dp":"/order-tracking","o":"http://localhost:3000/order-tracking","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660417712}
+[00:12:38.087] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/order-tracking color: rgb(120, 120, 120) color: inherit {"dp":"/order-tracking","o":"http://localhost:3000/order-tracking","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660417712}
+[00:12:41.958] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:42.027] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="order-trac..." loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/order-tra..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+              <SegmentViewNode type="page" pagePath="order-trac...">
+                <SegmentTrieNode>
+                <Page>
+                  <OrderTrackingPage>
+                    <div className="min-h-scre...">
+                      <div className="max-w-4xl ...">
+                        <LinkComponent>
+                        <Card className="p-6 mb-8 b...">
+                          <div data-slot="card" className="bg-card te...">
+                            <div className="flex items...">
+                              <div>
+                                <p>
+                                <h1 className="text-3xl font-bold text-foreground mb-4">
++                                 ORD-1764660421690
+-                                 ORD-1764660421562
+                                ...
+                        ...
+              ...
+            ...
+
+[00:12:42.027] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:42.027] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/order-tracking","route":"/order-tracking"}
+[00:12:42.027] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/order-tracking","route":"/order-tracking"}
+[00:12:42.027] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/order-tracking color: rgb(120, 120, 120) color: inherit {"dp":"/order-tracking","o":"http://localhost:3000/order-tracking","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660421722}
+[00:12:42.027] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/order-tracking color: rgb(120, 120, 120) color: inherit {"dp":"/order-tracking","o":"http://localhost:3000/order-tracking","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660421722}
+[00:12:42.197] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:42.197] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="order-trac..." loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/order-tra..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+              <SegmentViewNode type="page" pagePath="order-trac...">
+                <SegmentTrieNode>
+                <Page>
+                  <OrderTrackingPage>
+                    <div className="min-h-scre...">
+                      <div className="max-w-4xl ...">
+                        <LinkComponent>
+                        <Card className="p-6 mb-8 b...">
+                          <div data-slot="card" className="bg-card te...">
+                            <div className="flex items...">
+                              <div>
+                                <p>
+                                <h1 className="text-3xl font-bold text-foreground mb-4">
++                                 ORD-1764660421913
+-                                 ORD-1764660421790
+                                ...
+                        ...
+              ...
+            ...
+
+[00:12:42.382] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:42.382] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="order-trac..." loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/order-tra..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+              <SegmentViewNode type="page" pagePath="order-trac...">
+                <SegmentTrieNode>
+                <Page>
+                  <OrderTrackingPage>
+                    <div className="min-h-scre...">
+                      <div className="max-w-4xl ...">
+                        <LinkComponent>
+                        <Card className="p-6 mb-8 b...">
+                          <div data-slot="card" className="bg-card te...">
+                            <div className="flex items...">
+                              <div>
+                                <p>
+                                <h1 className="text-3xl font-bold text-foreground mb-4">
++                                 ORD-1764660422105
+-                                 ORD-1764660421980
+                                ...
+                        ...
+              ...
+            ...
+
+[00:12:42.552] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:42.552] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="order-trac..." loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/order-tra..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+              <SegmentViewNode type="page" pagePath="order-trac...">
+                <SegmentTrieNode>
+                <Page>
+                  <OrderTrackingPage>
+                    <div className="min-h-scre...">
+                      <div className="max-w-4xl ...">
+                        <LinkComponent>
+                        <Card className="p-6 mb-8 b...">
+                          <div data-slot="card" className="bg-card te...">
+                            <div className="flex items...">
+                              <div>
+                                <p>
+                                <h1 className="text-3xl font-bold text-foreground mb-4">
++                                 ORD-1764660422273
+-                                 ORD-1764660422164
+                                ...
+                        ...
+              ...
+            ...
+
+[00:12:42.570] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:42.570] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/order-tracking","route":"/order-tracking"}
+[00:12:42.570] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/order-tracking","route":"/order-tracking"}
+[00:12:42.570] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/order-tracking color: rgb(120, 120, 120) color: inherit {"dp":"/order-tracking","o":"http://localhost:3000/order-tracking","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660422305}
+[00:12:42.570] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/order-tracking color: rgb(120, 120, 120) color: inherit {"dp":"/order-tracking","o":"http://localhost:3000/order-tracking","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660422305}
+[00:12:42.897] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:42.922] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="order-trac..." loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/order-tra..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+              <SegmentViewNode type="page" pagePath="order-trac...">
+                <SegmentTrieNode>
+                <Page>
+                  <OrderTrackingPage>
+                    <div className="min-h-scre...">
+                      <div className="max-w-4xl ...">
+                        <LinkComponent>
+                        <Card className="p-6 mb-8 b...">
+                          <div data-slot="card" className="bg-card te...">
+                            <div className="flex items...">
+                              <div>
+                                <p>
+                                <h1 className="text-3xl font-bold text-foreground mb-4">
++                                 ORD-1764660422633
+-                                 ORD-1764660422494
+                                ...
+                        ...
+              ...
+            ...
+
+[00:12:43.086] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:43.086] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="order-trac..." loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/order-tra..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+              <SegmentViewNode type="page" pagePath="order-trac...">
+                <SegmentTrieNode>
+                <Page>
+                  <OrderTrackingPage>
+                    <div className="min-h-scre...">
+                      <div className="max-w-4xl ...">
+                        <LinkComponent>
+                        <Card className="p-6 mb-8 b...">
+                          <div data-slot="card" className="bg-card te...">
+                            <div className="flex items...">
+                              <div>
+                                <p>
+                                <h1 className="text-3xl font-bold text-foreground mb-4">
++                                 ORD-1764660422810
+-                                 ORD-1764660422691
+                                ...
+                        ...
+              ...
+            ...
+
+[00:12:43.216] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:43.216] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/order-tracking","route":"/order-tracking"}
+[00:12:43.216] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/order-tracking","route":"/order-tracking"}
+[00:12:43.216] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/order-tracking color: rgb(120, 120, 120) color: inherit {"dp":"/order-tracking","o":"http://localhost:3000/order-tracking","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660422840}
+[00:12:43.216] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/order-tracking color: rgb(120, 120, 120) color: inherit {"dp":"/order-tracking","o":"http://localhost:3000/order-tracking","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660422840}
+[00:12:45.472] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660425106}
+[00:12:47.361] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:47.485] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:47.485] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:12:47.485] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764660427110}
