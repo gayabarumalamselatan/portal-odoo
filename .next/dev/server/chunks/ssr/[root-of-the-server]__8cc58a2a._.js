@@ -73,25 +73,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$vercel$2f$
 ;
 const metadata = {
     title: "Odoo License Order Portal",
-    description: "Ajukan dan pantau proses pemesanan lisensi Odoo dengan mudah dan transparan",
-    generator: "v0.app",
-    icons: {
-        icon: [
-            {
-                url: "/icon-light-32x32.png",
-                media: "(prefers-color-scheme: light)"
-            },
-            {
-                url: "/icon-dark-32x32.png",
-                media: "(prefers-color-scheme: dark)"
-            },
-            {
-                url: "/icon.svg",
-                type: "image/svg+xml"
-            }
-        ],
-        apple: "/apple-icon.png"
-    }
+    description: "Ajukan dan pantau proses pemesanan lisensi Odoo dengan mudah dan transparan"
 };
 function RootLayout({ children }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
