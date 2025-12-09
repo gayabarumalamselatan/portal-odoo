@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///D:/documents/KerjaanAsi/odoo/odoo-portal/app/admin/page.tsx"],"sourcesContent":["import { AdminDashboardPage } from \"@/components/pages/admin/dashboard/admin-dashboard\";\n\nexport default function Page() {\n  return <AdminDashboardPage />;\n}\n"],"names":[],"mappings":";;;;;;;;;;;;AAEe,SAAS;IACtB,qBAAO,8OAAC;;;;;AACV"}}]
+}

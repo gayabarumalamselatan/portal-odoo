@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///D:/documents/KerjaanAsi/odoo/odoo-portal/components/react-query-provider.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport { QueryClient, QueryClientProvider } from \"@tanstack/react-query\";\r\n\r\nconst queryClient = new QueryClient();\r\n\r\nexport default function ReactQueryProvider({\r\n  children,\r\n}: {\r\n  children: React.ReactNode;\r\n}) {\r\n  return (\r\n    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;AAEA;AAAA;AAFA;;;AAIA,MAAM,cAAc,IAAI,4LAAW;AAEpB,SAAS,mBAAmB,EACzC,QAAQ,EAGT;IACC,qBACE,8OAAC,6MAAmB;QAAC,QAAQ;kBAAc;;;;;;AAE/C"}}]
+}

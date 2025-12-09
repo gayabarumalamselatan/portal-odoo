@@ -59,8 +59,11 @@ export function LandingNavbar() {
           </nav>
 
           {/* CTA */}
-          <Link href="/start-order">
-            <Button size="sm" className="rounded-full px-5">
+          <Link href="/order-form">
+            <Button
+              size="sm"
+              className="rounded-full px-5 hover:cursor-pointer"
+            >
               Buat Order
             </Button>
           </Link>

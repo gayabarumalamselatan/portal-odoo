@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 17, "column": 0}, "map": {"version":3,"sources":["file:///D:/documents/KerjaanAsi/odoo/odoo-portal/app/order-tracking/page.tsx"],"sourcesContent":["import OrderTrackingIndexPage from \"@/components/pages/requestor/order-tracking/orderTracking\";\n\nexport default function Page() {\n  return <OrderTrackingIndexPage />;\n}\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBAAO,8OAAC,kLAAsB;;;;;AAChC"}}]
+}

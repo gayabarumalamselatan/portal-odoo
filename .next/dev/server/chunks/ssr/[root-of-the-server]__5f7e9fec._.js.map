@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///D:/documents/KerjaanAsi/odoo/odoo-portal/app/order-success/page.tsx"],"sourcesContent":["import { OrderSuccessPage } from \"@/components/pages/requestor/order-success/OrderSuccess\";\r\n\r\nexport default function Page() {\r\n  return <OrderSuccessPage />;\r\n}\r\n"],"names":[],"mappings":";;;;;;;;;;;;AAEe,SAAS;IACtB,qBAAO,8OAAC;;;;;AACV"}}]
+}

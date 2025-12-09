@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///D:/documents/KerjaanAsi/odoo/odoo-portal/app/admin/orders/%5Bid%5D/page.tsx"],"sourcesContent":["export default function Page({ params }: { params: { id: string } }) {\n  const orderId = Number(params.id);\n\n  if (Number.isNaN(orderId)) {\n    return <div>Invalid Order ID</div>;\n  }\n\n  return (\n    <ProtectedRoute>\n      <AdminOrderDetailPageWrapper orderId={orderId} />\n    </ProtectedRoute>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS,KAAK,EAAE,MAAM,EAA8B;IACjE,MAAM,UAAU,OAAO,OAAO,EAAE;IAEhC,IAAI,OAAO,KAAK,CAAC,UAAU;QACzB,qBAAO,8OAAC;sBAAI;;;;;;IACd;IAEA,qBACE,8OAAC;kBACC,cAAA,8OAAC;YAA4B,SAAS;;;;;;;;;;;AAG5C"}}]
+}

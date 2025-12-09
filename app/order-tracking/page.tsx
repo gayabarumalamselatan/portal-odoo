@@ -1,5 +1,5 @@
-import { OrderTrackingPage } from "@/components/pages/order-tracking"
+import OrderTrackingIndexPage from "@/components/pages/requestor/order-tracking/orderTrackingIndex";
 
 export default function Page() {
-  return <OrderTrackingPage />
+  return <OrderTrackingIndexPage />;
 }

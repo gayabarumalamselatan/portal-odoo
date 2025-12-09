@@ -1,5 +1,5 @@
-import { OrderFormPage } from "@/components/pages/order-form"
+import { OrderFormPage } from "@/components/pages/requestor/order-form/orderForm";
 
 export default function Page() {
-  return <OrderFormPage />
+  return <OrderFormPage />;
 }
