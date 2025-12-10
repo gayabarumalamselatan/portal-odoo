@@ -8,6 +8,7 @@ import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { useState } from "react";
 import { OrderStatus } from "@/types/order";
 import { useAdminOrderDetail } from "./useOrderDetail";
+import { useParams } from "next/navigation";
 
 const statusConfig: Record<OrderStatus, { label: string; color: string }> = {
   DITERIMA: { label: "Menunggu", color: "bg-yellow-100 text-yellow-800" },
@@ -18,7 +19,9 @@ const statusConfig: Record<OrderStatus, { label: string; color: string }> = {
   REVISI: { label: "Perlu Revisi", color: "bg-red-100 text-red-800" },
 };
 
-export function AdminOrderDetailPage({ orderId }: { orderId: number }) {
+export function AdminOrderDetailPage() {
+  const params = useParams();
+  const orderId = Number(params.id);
   const { order, isLoading, updateStatus, updating } =
     useAdminOrderDetail(orderId);
 
@@ -69,8 +72,8 @@ export function AdminOrderDetailPage({ orderId }: { orderId: number }) {
             <h1 className="text-3xl font-bold mb-2">Order #{order.id}</h1>
             <p className="text-muted-foreground">{order.company_name}</p>
           </div>
-          <Badge className={statusConfig[order.status].color}>
-            {statusConfig[order.status].label}
+          <Badge className={statusConfig[order.status as OrderStatus].color}>
+            {statusConfig[order.status as OrderStatus].label}
           </Badge>
         </div>
 

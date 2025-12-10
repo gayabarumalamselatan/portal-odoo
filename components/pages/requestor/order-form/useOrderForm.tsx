@@ -18,6 +18,7 @@ const OrderSchema = yup.object().shape({
   user_amount: yup.string(),
   notes: yup.string(),
   status: yup.string(),
+  order_date: yup.string(),
 });
 
 const AddOrder = async (payload: any) => {
@@ -39,6 +40,7 @@ const useOrderForm = () => {
       user_amount: "",
       notes: "",
       status: "DITERIMA",
+      order_date: "",
     },
     resolver: yupResolver(OrderSchema),
   });

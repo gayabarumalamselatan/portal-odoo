@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { LogOut, User } from "lucide-react";
 
-export function AdminOrderDetailPageWrapper({ orderId }: { orderId: number }) {
+export function AdminOrderDetailPageWrapper() {
   const { user, logout } = useAuth();
   const router = useRouter();
 
@@ -43,7 +43,7 @@ export function AdminOrderDetailPageWrapper({ orderId }: { orderId: number }) {
         </div>
       </div>
 
-      <AdminOrderDetailPage orderId={orderId} />
+      <AdminOrderDetailPage />
     </div>
   );
 }

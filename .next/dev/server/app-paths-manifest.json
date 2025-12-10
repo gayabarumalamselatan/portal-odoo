@@ -1,12 +1,1 @@
-{
-  "/admin/login/page": "app/admin/login/page.js",
-  "/admin/orders/[id]/page": "app/admin/orders/[id]/page.js",
-  "/admin/page": "app/admin/page.js",
-  "/api/order/[id]/route": "app/api/order/[id]/route.js",
-  "/api/order/route": "app/api/order/route.js",
-  "/order-form/page": "app/order-form/page.js",
-  "/order-success/[id]/page": "app/order-success/[id]/page.js",
-  "/order-tracking/[id]/page": "app/order-tracking/[id]/page.js",
-  "/order-tracking/page": "app/order-tracking/page.js",
-  "/page": "app/page.js"
-}
+{}

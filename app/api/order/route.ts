@@ -25,6 +25,7 @@ export async function GET(req: Request) {
             { license_type: { contains: search, mode: "insensitive" } },
             { notes: { contains: search, mode: "insensitive" } },
             { status: { contains: search, mode: "insensitive" } },
+            { order_date: { contains: search, mode: "insensitive" } },
             isNumber ? { id: Number(search) } : undefined,
           ].filter(Boolean),
         }
@@ -74,6 +75,7 @@ export async function POST(req: Request) {
         user_amount: body.user_amount,
         notes: body.notes,
         status: body.status,
+        order_date: body.order_date,
       },
     });
 
