@@ -424,6 +424,12 @@ async function GET(req) {
                         mode: "insensitive"
                     }
                 },
+                {
+                    order_date: {
+                        contains: search,
+                        mode: "insensitive"
+                    }
+                },
                 isNumber ? {
                     id: Number(search)
                 } : undefined
@@ -476,7 +482,8 @@ async function POST(req) {
                 license_type: body.license_type,
                 user_amount: body.user_amount,
                 notes: body.notes,
-                status: body.status
+                status: body.status,
+                order_date: body.order_date
             }
         });
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
