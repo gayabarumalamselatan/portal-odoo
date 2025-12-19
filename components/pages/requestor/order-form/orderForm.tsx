@@ -103,7 +103,11 @@ export function OrderFormPage() {
                     name="company_name"
                     control={control}
                     render={({ field }) => (
-                      <Input {...field} placeholder="PT Contoh Perusahaan" />
+                      <Input
+                        {...field}
+                        autoFocus
+                        placeholder="PT Contoh Perusahaan"
+                      />
                     )}
                   />
                 </Field>

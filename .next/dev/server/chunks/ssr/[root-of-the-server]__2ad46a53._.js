@@ -78,14 +78,19 @@ const VALID_ADMINS = [
         role: "manager"
     }
 ];
+const COOKIE_NAME = "admin_auth";
 function AuthProvider({ children }) {
     const [user, setUser] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
     // Check session on mount
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const stored = sessionStorage.getItem("adminUser");
+        const stored = getCookie(COOKIE_NAME);
         if (stored) {
-            setUser(JSON.parse(stored));
+            try {
+                setUser(JSON.parse(stored));
+            } catch  {
+                deleteCookie(COOKIE_NAME);
+            }
         }
         setIsLoading(false);
     }, []);
@@ -100,11 +105,11 @@ function AuthProvider({ children }) {
             role: admin.role
         };
         setUser(userData);
-        sessionStorage.setItem("adminUser", JSON.stringify(userData));
+        setCookie(COOKIE_NAME, JSON.stringify(userData));
     };
     const logout = ()=>{
         setUser(null);
-        sessionStorage.removeItem("adminUser");
+        deleteCookie(COOKIE_NAME);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AuthContext.Provider, {
         value: {
@@ -116,7 +121,7 @@ function AuthProvider({ children }) {
         children: children
     }, void 0, false, {
         fileName: "[project]/lib/auth.context.tsx",
-        lineNumber: 77,
+        lineNumber: 83,
         columnNumber: 5
     }, this);
 }

@@ -2,8 +2,9 @@
 
 import type React from "react";
 import { createContext, useContext, useState, useEffect } from "react";
+import { setCookie, getCookie, deleteCookie } from "@/utils/cookies";
 
-export type AdminRole = "supervisor" | "manager";
+export type AdminRole = "sales" | "manager" | "admin";
 
 export interface AdminUser {
   email: string;
@@ -23,18 +24,26 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 // Mock admin credentials for demo
 const VALID_ADMINS = [
   {
-    email: "supervisor@odoo.com",
-    password: "supervisor123",
-    name: "Supervisor Admin",
-    role: "supervisor" as AdminRole,
+    email: "sales.asiasistem@odoo.com",
+    password: "sales123",
+    name: "Sales Asia Sistem",
+    role: "sales" as AdminRole,
   },
   {
-    email: "manager@odoo.com",
-    password: "manager123",
-    name: "Manager Admin",
+    email: "manager.permata@odoo.com",
+    password: "manager",
+    name: "Manager Permata",
     role: "manager" as AdminRole,
   },
+  {
+    email: "admin@odoo.com",
+    password: "admin",
+    name: "Super Admin",
+    role: "admin" as AdminRole,
+  },
 ];
+
+const COOKIE_NAME = "admin_auth";
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<AdminUser | null>(null);
@@ -42,9 +51,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   // Check session on mount
   useEffect(() => {
-    const stored = sessionStorage.getItem("adminUser");
+    const stored = getCookie(COOKIE_NAME);
     if (stored) {
-      setUser(JSON.parse(stored));
+      try {
+        setUser(JSON.parse(stored));
+      } catch {
+        deleteCookie(COOKIE_NAME);
+      }
     }
     setIsLoading(false);
   }, []);
@@ -65,12 +78,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     };
 
     setUser(userData);
-    sessionStorage.setItem("adminUser", JSON.stringify(userData));
+    setCookie(COOKIE_NAME, JSON.stringify(userData));
   };
 
   const logout = () => {
     setUser(null);
-    sessionStorage.removeItem("adminUser");
+    deleteCookie(COOKIE_NAME);
   };
 
   return (

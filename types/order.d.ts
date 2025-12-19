@@ -1,10 +1,9 @@
 export type OrderStatus =
-  | "DITERIMA"
-  | "VALIDASI"
-  | "BILLING"
-  | "PROSES"
+  | "VALIDASI MANAGER"
+  | "INTAKE ORDER"
   | "SELESAI"
-  | "REVISI";
+  | "REVISI"
+  | "DITOLAK";
 
 interface IOrder {
   company_name: string;
@@ -21,8 +20,7 @@ interface IOrder {
 interface ITracking extends IOrder {
   id: number;
 }
-
-export interface UpdateOrderStatusPayload {
+interface UpdateOrderStatusPayload {
   status: OrderStatus;
   admin_comment?: string;
 }

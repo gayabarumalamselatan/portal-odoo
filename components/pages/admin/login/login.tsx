@@ -1,10 +1,5 @@
 "use client";
 
-import type React from "react";
-
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-import { useAuth } from "@/lib/auth.context";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -15,29 +10,18 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { AlertCircle, CheckCircle } from "lucide-react";
+import useLogin from "./useLogin";
 
 export function AdminLoginPage() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-  const { login } = useAuth();
-  const router = useRouter();
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setError("");
-    setIsLoading(true);
-
-    try {
-      await login(email, password);
-      router.push("/admin");
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Login gagal");
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  const {
+    handleSubmit,
+    setEmail,
+    setPassword,
+    isLoading,
+    email,
+    password,
+    error,
+  } = useLogin();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-muted to-background flex items-center justify-center p-4">
@@ -103,63 +87,14 @@ export function AdminLoginPage() {
               {/* Submit Button */}
               <Button
                 type="submit"
-                className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                className="w-full bg-primary text-primary-foreground hover:bg-primary/90 hover:cursor-pointer mt-5"
                 disabled={isLoading}
               >
                 {isLoading ? "Sedang login..." : "Login"}
               </Button>
             </form>
-
-            {/* Demo Credentials */}
-            <div className="mt-6 pt-6 border-t border-border space-y-3">
-              <p className="text-xs font-medium text-muted-foreground uppercase">
-                Kredensial Demo
-              </p>
-
-              <div className="space-y-2">
-                <div className="p-3 bg-muted/50 rounded-lg">
-                  <p className="text-xs font-semibold text-foreground mb-1">
-                    Supervisor
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    Email: supervisor@odoo.com
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    Password: supervisor123
-                  </p>
-                </div>
-
-                <div className="p-3 bg-muted/50 rounded-lg">
-                  <p className="text-xs font-semibold text-foreground mb-1">
-                    Manager
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    Email: manager@odoo.com
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    Password: manager123
-                  </p>
-                </div>
-              </div>
-            </div>
           </CardContent>
         </Card>
-
-        {/* Info Section */}
-        <div className="space-y-3">
-          <div className="flex gap-3 p-4 bg-primary/5 border border-primary/10 rounded-lg">
-            <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-            <div className="text-sm">
-              <p className="font-medium text-foreground mb-1">
-                2 Role Admin Tersedia
-              </p>
-              <p className="text-muted-foreground text-xs">
-                Supervisor untuk full access dan Manager untuk akses terbatas.
-                Gunakan kredensial demo di atas.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

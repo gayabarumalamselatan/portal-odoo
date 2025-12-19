@@ -38,7 +38,7 @@ const useOrderForm = () => {
       license_type: "professional",
       user_amount: "",
       notes: "",
-      status: "DITERIMA",
+      status: "VALIDASI MANAGER",
     },
     resolver: yupResolver(OrderSchema),
   });

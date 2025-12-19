@@ -63,10 +63,8 @@ export async function PATCH(
 
     // ✅ Validasi status
     const allowedStatus: OrderStatus[] = [
-      "DITERIMA",
-      "VALIDASI",
-      "BILLING",
-      "PROSES",
+      "VALIDASI MANAGER",
+      "VALIDASI SALES",
       "SELESAI",
       "REVISI",
     ];

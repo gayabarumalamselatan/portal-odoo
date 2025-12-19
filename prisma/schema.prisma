@@ -9,15 +9,16 @@ datasource db {
 }
 
 model order {
-  id               Int     @id(map: "order_pk") @default(autoincrement())
-  company_name     String? @db.VarChar
-  npwp_number      String? @db.VarChar
+  id               Int       @id(map: "order_pk") @default(autoincrement())
+  company_name     String?   @db.VarChar
+  npwp_number      String?   @db.VarChar
   employees_amount Int?
-  pic_name         String? @db.VarChar
-  pic_phone        String? @db.VarChar
-  pic_email        String? @db.VarChar
-  license_type     String? @db.VarChar
-  user_amount      String? @db.VarChar
-  notes            String? @db.VarChar
-  status           String? @db.VarChar
+  pic_name         String?   @db.VarChar
+  pic_phone        String?   @db.VarChar
+  pic_email        String?   @db.VarChar
+  license_type     String?   @db.VarChar
+  user_amount      String?   @db.VarChar
+  notes            String?   @db.VarChar
+  status           String?   @db.VarChar
+  created_date     DateTime? @db.Date
 }

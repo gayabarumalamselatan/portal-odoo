@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useDashboard, OrderStatus } from "./useDashboard";
+import { useDashboard } from "./useDashboard";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -16,19 +16,34 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Search, Filter, Eye } from "lucide-react";
+import { getCookie } from "@/utils/cookies";
+import { OrderStatus } from "@/types/order";
 
 const statusConfig: Record<OrderStatus, { label: string; color: string }> = {
-  DITERIMA: { label: "Diterima", color: "bg-yellow-100 text-yellow-800" },
-  VALIDASI: { label: "Validasi", color: "bg-blue-100 text-blue-800" },
-  BILLING: { label: "Billing", color: "bg-purple-100 text-purple-800" },
-  PROSES: { label: "Proses", color: "bg-cyan-100 text-cyan-800" },
+  "VALIDASI MANAGER": {
+    label: "Validasi Manager",
+    color: "bg-blue-100 text-blue-800",
+  },
+  "INTAKE ORDER": {
+    label: "Validasi Sales",
+    color: "bg-purple-100 text-purple-800",
+  },
   SELESAI: { label: "Selesai", color: "bg-green-100 text-green-800" },
   REVISI: { label: "Revisi", color: "bg-red-100 text-red-800" },
+  DITOLAK: { label: "DITOLAK", color: "bg-red-100 text-red-800" },
 };
 
 export function AdminDashboardPage() {
   const { data, isLoading, isError } = useDashboard();
   const [searchTerm, setSearchTerm] = useState("");
+  const COOKIE_NAME = "admin_auth";
+
+  useEffect(() => {
+    const stored = getCookie(COOKIE_NAME);
+    if (!stored) return;
+    const parsedstore = JSON.parse(stored);
+    console.log("parapmpam", parsedstore.role);
+  }, []);
 
   if (isLoading) return <p className="p-8">Loading...</p>;
   if (isError || !data) return <p className="p-8">Gagal memuat data order</p>;
@@ -90,11 +105,15 @@ export function AdminDashboardPage() {
                       </Badge>
                     </TableCell>
                     <TableCell className="text-sm text-muted-foreground">
-                      {new Date(order.created_at).toLocaleDateString("id-ID")}
+                      {new Date(order.created_date).toLocaleDateString("id-ID")}
                     </TableCell>
                     <TableCell className="text-right">
-                      <Link href={`admin/orders/${order.id}`}>
-                        <Button variant="ghost" size="sm">
+                      <Link href={` orders/${order.id}`}>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="hover:cursor-pointer"
+                        >
                           <Eye className="w-4 h-4 mr-2" />
                           Detail
                         </Button>

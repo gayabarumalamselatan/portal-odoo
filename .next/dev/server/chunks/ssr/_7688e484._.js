@@ -238,7 +238,7 @@ function AdminLoginPage() {
         setIsLoading(true);
         try {
             await login(email, password);
-            router.push("/admin");
+            router.push("/admin/dashboard");
         } catch (err) {
             setError(err instanceof Error ? err.message : "Login gagal");
         } finally{

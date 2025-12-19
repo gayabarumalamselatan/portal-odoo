@@ -2,26 +2,22 @@
 
 import { useQuery } from "@tanstack/react-query";
 import { orderService } from "@/service/order.service";
-
-export type OrderStatus =
-  | "DITERIMA"
-  | "VALIDASI"
-  | "BILLING"
-  | "PROSES"
-  | "SELESAI"
-  | "REVISI";
+import { getAdminStatusByRole } from "@/utils/fetchrole.cookies";
+import { OrderStatus } from "@/types/order";
 
 export interface AdminOrder {
   id: number;
   company_name: string;
   pic_email: string;
   status: OrderStatus;
-  created_at: string;
+  created_date: string;
 }
 
 // fetcher
 const fetchOrders = async (): Promise<AdminOrder[]> => {
-  const res = await orderService.getOrder(); // GET /api/order
+  const status = getAdminStatusByRole();
+  const query = status ? `search=${status}` : "";
+  const res = await orderService.getOrder(query);
   return res.data.data;
 };
 

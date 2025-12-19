@@ -61,6 +61,7 @@ const VALID_ADMINS = [
         role: "manager"
     }
 ];
+const COOKIE_NAME = "admin_auth";
 function AuthProvider({ children }) {
     _s();
     const [user, setUser] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
@@ -68,9 +69,13 @@ function AuthProvider({ children }) {
     // Check session on mount
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "AuthProvider.useEffect": ()=>{
-            const stored = sessionStorage.getItem("adminUser");
+            const stored = getCookie(COOKIE_NAME);
             if (stored) {
-                setUser(JSON.parse(stored));
+                try {
+                    setUser(JSON.parse(stored));
+                } catch  {
+                    deleteCookie(COOKIE_NAME);
+                }
             }
             setIsLoading(false);
         }
@@ -86,11 +91,11 @@ function AuthProvider({ children }) {
             role: admin.role
         };
         setUser(userData);
-        sessionStorage.setItem("adminUser", JSON.stringify(userData));
+        setCookie(COOKIE_NAME, JSON.stringify(userData));
     };
     const logout = ()=>{
         setUser(null);
-        sessionStorage.removeItem("adminUser");
+        deleteCookie(COOKIE_NAME);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AuthContext.Provider, {
         value: {
@@ -102,7 +107,7 @@ function AuthProvider({ children }) {
         children: children
     }, void 0, false, {
         fileName: "[project]/lib/auth.context.tsx",
-        lineNumber: 77,
+        lineNumber: 83,
         columnNumber: 5
     }, this);
 }

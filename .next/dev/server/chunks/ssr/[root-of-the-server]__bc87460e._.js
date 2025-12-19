@@ -401,7 +401,7 @@ const useOrderForm = ()=>{
             license_type: "professional",
             user_amount: "",
             notes: "",
-            status: "DITERIMA"
+            status: "VALIDASI MANAGER"
         },
         resolver: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$hookform$2f$resolvers$2f$yup$2f$dist$2f$yup$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["yupResolver"])(OrderSchema)
     });
@@ -579,6 +579,7 @@ function OrderFormPage() {
                                                 control: control,
                                                 render: ({ field })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
                                                         ...field,
+                                                        autoFocus: true,
                                                         placeholder: "PT Contoh Perusahaan"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
@@ -607,17 +608,17 @@ function OrderFormPage() {
                                                         placeholder: "XX.XXX.XXX.X-XXX.XXX"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                        lineNumber: 120,
+                                                        lineNumber: 124,
                                                         columnNumber: 23
                                                     }, void 0)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                lineNumber: 116,
+                                                lineNumber: 120,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 111,
+                                            lineNumber: 115,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
@@ -633,17 +634,17 @@ function OrderFormPage() {
                                                         onChange: (e)=>field.onChange(e.target.valueAsNumber)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                        lineNumber: 130,
+                                                        lineNumber: 134,
                                                         columnNumber: 23
                                                     }, void 0)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                lineNumber: 126,
+                                                lineNumber: 130,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 125,
+                                            lineNumber: 129,
                                             columnNumber: 17
                                         }, this)
                                     ]
@@ -661,17 +662,17 @@ function OrderFormPage() {
                                                         ...field
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                        lineNumber: 153,
+                                                        lineNumber: 157,
                                                         columnNumber: 44
                                                     }, void 0)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                lineNumber: 150,
+                                                lineNumber: 154,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 145,
+                                            lineNumber: 149,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
@@ -686,17 +687,17 @@ function OrderFormPage() {
                                                         placeholder: "+62..."
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                        lineNumber: 166,
+                                                        lineNumber: 170,
                                                         columnNumber: 23
                                                     }, void 0)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                lineNumber: 162,
+                                                lineNumber: 166,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 157,
+                                            lineNumber: 161,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
@@ -711,17 +712,17 @@ function OrderFormPage() {
                                                         type: "email"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                        lineNumber: 179,
+                                                        lineNumber: 183,
                                                         columnNumber: 44
                                                     }, void 0)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                lineNumber: 176,
+                                                lineNumber: 180,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 171,
+                                            lineNumber: 175,
                                             columnNumber: 17
                                         }, this)
                                     ]
@@ -743,7 +744,7 @@ function OrderFormPage() {
                                                                 children: "Professional"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                                lineNumber: 197,
+                                                                lineNumber: 201,
                                                                 columnNumber: 25
                                                             }, void 0),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -751,7 +752,7 @@ function OrderFormPage() {
                                                                 children: "Enterprise"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                                lineNumber: 198,
+                                                                lineNumber: 202,
                                                                 columnNumber: 25
                                                             }, void 0),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -759,23 +760,23 @@ function OrderFormPage() {
                                                                 children: "Custom"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                                lineNumber: 199,
+                                                                lineNumber: 203,
                                                                 columnNumber: 25
                                                             }, void 0)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                        lineNumber: 193,
+                                                        lineNumber: 197,
                                                         columnNumber: 23
                                                     }, void 0)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                lineNumber: 189,
+                                                lineNumber: 193,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 188,
+                                            lineNumber: 192,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
@@ -789,17 +790,17 @@ function OrderFormPage() {
                                                         type: "number"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                        lineNumber: 209,
+                                                        lineNumber: 213,
                                                         columnNumber: 44
                                                     }, void 0)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                lineNumber: 206,
+                                                lineNumber: 210,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 205,
+                                            lineNumber: 209,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
@@ -814,17 +815,17 @@ function OrderFormPage() {
                                                         rows: 4
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                        lineNumber: 218,
+                                                        lineNumber: 222,
                                                         columnNumber: 23
                                                     }, void 0)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                                lineNumber: 214,
+                                                lineNumber: 218,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 213,
+                                            lineNumber: 217,
                                             columnNumber: 17
                                         }, this)
                                     ]
@@ -837,7 +838,7 @@ function OrderFormPage() {
                                             value: data.company_name
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 232,
+                                            lineNumber: 236,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Review, {
@@ -845,7 +846,7 @@ function OrderFormPage() {
                                             value: data.npwp_number
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 233,
+                                            lineNumber: 237,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Review, {
@@ -853,7 +854,7 @@ function OrderFormPage() {
                                             value: data.employees_amount
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 234,
+                                            lineNumber: 238,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Review, {
@@ -861,7 +862,7 @@ function OrderFormPage() {
                                             value: data.pic_name
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 235,
+                                            lineNumber: 239,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Review, {
@@ -869,7 +870,7 @@ function OrderFormPage() {
                                             value: data.pic_phone
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 236,
+                                            lineNumber: 240,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Review, {
@@ -877,7 +878,7 @@ function OrderFormPage() {
                                             value: data.pic_email
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 237,
+                                            lineNumber: 241,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Review, {
@@ -885,7 +886,7 @@ function OrderFormPage() {
                                             value: data.license_type
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 238,
+                                            lineNumber: 242,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Review, {
@@ -893,7 +894,7 @@ function OrderFormPage() {
                                             value: data.user_amount
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 239,
+                                            lineNumber: 243,
                                             columnNumber: 17
                                         }, this),
                                         data.notes && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Review, {
@@ -901,13 +902,13 @@ function OrderFormPage() {
                                             value: data.notes
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 240,
+                                            lineNumber: 244,
                                             columnNumber: 32
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                    lineNumber: 231,
+                                    lineNumber: 235,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -920,7 +921,7 @@ function OrderFormPage() {
                                             children: "Kembali"
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 247,
+                                            lineNumber: 251,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -930,13 +931,13 @@ function OrderFormPage() {
                                             children: currentStep === 4 ? "Submit Order" : "Lanjutkan"
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                            lineNumber: 251,
+                                            lineNumber: 255,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                                    lineNumber: 245,
+                                    lineNumber: 249,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -971,7 +972,7 @@ function OrderFormPage() {
                 children: label
             }, void 0, false, {
                 fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                lineNumber: 280,
+                lineNumber: 284,
                 columnNumber: 7
             }, this),
             children,
@@ -980,13 +981,13 @@ function OrderFormPage() {
                 children: error
             }, void 0, false, {
                 fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                lineNumber: 282,
+                lineNumber: 286,
                 columnNumber: 17
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-        lineNumber: 279,
+        lineNumber: 283,
         columnNumber: 5
     }, this);
 }
@@ -1001,7 +1002,7 @@ function Review({ label, value }) {
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                lineNumber: 290,
+                lineNumber: 294,
                 columnNumber: 7
             }, this),
             " ",
@@ -1010,13 +1011,13 @@ function Review({ label, value }) {
                 children: value || "-"
             }, void 0, false, {
                 fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-                lineNumber: 291,
+                lineNumber: 295,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/pages/requestor/order-form/orderForm.tsx",
-        lineNumber: 289,
+        lineNumber: 293,
         columnNumber: 5
     }, this);
 }

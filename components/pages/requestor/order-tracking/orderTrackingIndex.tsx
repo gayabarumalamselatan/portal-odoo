@@ -16,18 +16,28 @@ export default function OrderTrackingIndexPage() {
         <h1 className="text-2xl font-bold text-center">Tracking Pesanan</h1>
 
         <Input
-          type="number"
+          type="text"
+          autoFocus
           placeholder="Masukkan ID Order (contoh: 1)"
           value={orderId}
           onChange={(e) => setOrderId(e.target.value)}
         />
 
         <Button
-          className="w-full"
+          className="w-full hover:cursor-pointer mb-0"
           disabled={!orderId}
           onClick={() => router.push(`/order-tracking/${orderId}`)}
         >
           Lacak Pesanan
+        </Button>
+
+        {/* Tombol kembali */}
+        <Button
+          variant="outline"
+          className="w-full hover:cursor-pointer mb-0"
+          onClick={() => router.push("/")}
+        >
+          Kembali ke Beranda
         </Button>
       </Card>
     </div>

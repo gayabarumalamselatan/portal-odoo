@@ -13,6 +13,8 @@ export async function GET(req: Request) {
 
     const skip = (page - 1) * limit;
     const isNumber = !isNaN(Number(search));
+    const isDate =
+      !isNaN(Date.parse(search)) && /^\d{4}-\d{2}-\d{2}$/.test(search);
 
     const where: any = search
       ? {
@@ -25,8 +27,16 @@ export async function GET(req: Request) {
             { license_type: { contains: search, mode: "insensitive" } },
             { notes: { contains: search, mode: "insensitive" } },
             { status: { contains: search, mode: "insensitive" } },
-            { order_date: { contains: search, mode: "insensitive" } },
             isNumber ? { id: Number(search) } : undefined,
+
+            isDate
+              ? {
+                  created_date: {
+                    gte: new Date(`${search}T00:00:00.000Z`),
+                    lt: new Date(`${search}T23:59:59.999Z`),
+                  },
+                }
+              : undefined,
           ].filter(Boolean),
         }
       : {};
@@ -75,7 +85,7 @@ export async function POST(req: Request) {
         user_amount: body.user_amount,
         notes: body.notes,
         status: body.status,
-        order_date: body.order_date,
+        created_date: new Date(),
       },
     });
 

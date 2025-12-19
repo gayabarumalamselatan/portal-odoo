@@ -7,29 +7,20 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, CheckCircle2, Clock, AlertCircle } from "lucide-react";
 import { useOrderTracking } from "./useOrderTracking";
 import { OrderStatus } from "@/types/order";
+import { OrderMilestones } from "@/constant/status.constant";
 
 const STATUS_MAP: Record<
   OrderStatus,
   { label: string; color: string; icon: React.ReactNode }
 > = {
-  DITERIMA: {
-    label: "Order Diterima",
-    color: "bg-yellow-100 text-yellow-800",
-    icon: <Clock className="w-4 h-4" />,
-  },
-  VALIDASI: {
-    label: "Validasi Data",
+  "VALIDASI MANAGER": {
+    label: "Validasi Data Oleh Manager",
     color: "bg-blue-100 text-blue-800",
     icon: <Clock className="w-4 h-4" />,
   },
-  BILLING: {
-    label: "Billing",
+  "INTAKE ORDER": {
+    label: "Intake Order Oleh Sales",
     color: "bg-purple-100 text-purple-800",
-    icon: <Clock className="w-4 h-4" />,
-  },
-  PROSES: {
-    label: "Proses Lisensi",
-    color: "bg-cyan-100 text-cyan-800",
     icon: <Clock className="w-4 h-4" />,
   },
   SELESAI: {
@@ -42,15 +33,12 @@ const STATUS_MAP: Record<
     color: "bg-red-100 text-red-800",
     icon: <AlertCircle className="w-4 h-4" />,
   },
+  DITOLAK: {
+    label: "Ditolak",
+    color: "bg-red-100 text-red-800",
+    icon: <AlertCircle className="w-4 h-4" />,
+  },
 };
-
-const MILESTONE: OrderStatus[] = [
-  "DITERIMA",
-  "VALIDASI",
-  "BILLING",
-  "PROSES",
-  "SELESAI",
-];
 
 export default function OrderTrackingDetailPage() {
   const params = useParams();
@@ -62,12 +50,15 @@ export default function OrderTrackingDetailPage() {
   if (isLoading) return <p className="p-8">Loading...</p>;
   if (isError || !data) return <p className="p-8">Order tidak ditemukan</p>;
 
-  const currentIndex = MILESTONE.indexOf(data.status);
+  const currentIndex = OrderMilestones.indexOf(data.status);
 
   return (
     <div className="min-h-screen bg-background px-4 py-10">
       <div className="max-w-4xl mx-auto">
-        <Link href="/order-tracking" className="flex gap-2 text-primary mb-6">
+        <Link
+          href="/order-tracking"
+          className="flex gap-2 text-primary mb-6 items-center hover:underline"
+        >
           <ArrowLeft className="w-4 h-4" /> Kembali
         </Link>
 
@@ -86,8 +77,8 @@ export default function OrderTrackingDetailPage() {
           <div className="md:col-span-2">
             <h2 className="font-semibold mb-4">Status Proses</h2>
 
-            {MILESTONE.map((step, idx) => (
-              <div key={step} className="flex gap-4 mb-6">
+            {OrderMilestones.map((step, idx) => (
+              <div key={step} className="flex gap-4">
                 <div className="flex flex-col items-center">
                   <div
                     className={`w-10 h-10 rounded-full flex items-center justify-center
@@ -103,7 +94,7 @@ export default function OrderTrackingDetailPage() {
                       idx + 1
                     )}
                   </div>
-                  {idx < MILESTONE.length - 1 && (
+                  {idx < OrderMilestones.length - 1 && (
                     <div
                       className={`w-1 h-10 ${
                         idx < currentIndex ? "bg-primary" : "bg-muted"
@@ -116,7 +107,11 @@ export default function OrderTrackingDetailPage() {
                   <p className="font-medium">{STATUS_MAP[step].label}</p>
                   {step === data.status && (
                     <p className="text-sm text-muted-foreground">
-                      Sedang diproses
+                      {data.status === "SELESAI"
+                        ? "Selesai"
+                        : data.status === "REVISI"
+                        ? "Perlu Revisi"
+                        : "Sedang diproses"}
                     </p>
                   )}
                 </div>

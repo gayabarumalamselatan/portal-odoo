@@ -375,9 +375,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$pages$2f$reque
 ;
 ;
 const STATUS_MAP = {
-    DITERIMA: {
-        label: "Order Diterima",
-        color: "bg-yellow-100 text-yellow-800",
+    "VALIDASI MANAGER": {
+        label: "Validasi Data Oleh Manager",
+        color: "bg-blue-100 text-blue-800",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
             className: "w-4 h-4"
         }, void 0, false, {
@@ -386,36 +386,14 @@ const STATUS_MAP = {
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0))
     },
-    VALIDASI: {
-        label: "Validasi Data",
-        color: "bg-blue-100 text-blue-800",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-            className: "w-4 h-4"
-        }, void 0, false, {
-            fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-            lineNumber: 23,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0))
-    },
-    BILLING: {
-        label: "Billing",
+    "VALIDASI SALES": {
+        label: "Validasi Data Oleh Sales",
         color: "bg-purple-100 text-purple-800",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
             className: "w-4 h-4"
         }, void 0, false, {
             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-            lineNumber: 28,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0))
-    },
-    PROSES: {
-        label: "Proses Lisensi",
-        color: "bg-cyan-100 text-cyan-800",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-            className: "w-4 h-4"
-        }, void 0, false, {
-            fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-            lineNumber: 33,
+            lineNumber: 23,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -426,7 +404,7 @@ const STATUS_MAP = {
             className: "w-4 h-4"
         }, void 0, false, {
             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-            lineNumber: 38,
+            lineNumber: 28,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -437,16 +415,15 @@ const STATUS_MAP = {
             className: "w-4 h-4"
         }, void 0, false, {
             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-            lineNumber: 43,
+            lineNumber: 33,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0))
     }
 };
 const MILESTONE = [
-    "DITERIMA",
-    "VALIDASI",
-    "BILLING",
-    "PROSES",
+    "VALIDASI MANAGER",
+    "VALIDASI SALES",
+    "REVISI",
     "SELESAI"
 ];
 function OrderTrackingDetailPage() {
@@ -460,7 +437,7 @@ function OrderTrackingDetailPage() {
         children: "Loading..."
     }, void 0, false, {
         fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-        lineNumber: 62,
+        lineNumber: 51,
         columnNumber: 25
     }, this);
     if (isError || !data) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -468,7 +445,7 @@ function OrderTrackingDetailPage() {
         children: "Order tidak ditemukan"
     }, void 0, false, {
         fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-        lineNumber: 63,
+        lineNumber: 52,
         columnNumber: 32
     }, this);
     const currentIndex = MILESTONE.indexOf(data.status);
@@ -479,20 +456,20 @@ function OrderTrackingDetailPage() {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                     href: "/order-tracking",
-                    className: "flex gap-2 text-primary mb-6",
+                    className: "flex gap-2 text-primary mb-6 items-center hover:underline",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$left$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeft$3e$__["ArrowLeft"], {
                             className: "w-4 h-4"
                         }, void 0, false, {
                             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                            lineNumber: 71,
+                            lineNumber: 63,
                             columnNumber: 11
                         }, this),
                         " Kembali"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                    lineNumber: 70,
+                    lineNumber: 59,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -503,7 +480,7 @@ function OrderTrackingDetailPage() {
                             children: "ID Order"
                         }, void 0, false, {
                             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                            lineNumber: 76,
+                            lineNumber: 68,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -514,7 +491,7 @@ function OrderTrackingDetailPage() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                            lineNumber: 77,
+                            lineNumber: 69,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
@@ -522,13 +499,13 @@ function OrderTrackingDetailPage() {
                             children: STATUS_MAP[data.status].label
                         }, void 0, false, {
                             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                            lineNumber: 79,
+                            lineNumber: 71,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                    lineNumber: 75,
+                    lineNumber: 67,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -542,11 +519,11 @@ function OrderTrackingDetailPage() {
                                     children: "Status Proses"
                                 }, void 0, false, {
                                     fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                    lineNumber: 87,
+                                    lineNumber: 79,
                                     columnNumber: 13
                                 }, this),
                                 MILESTONE.map((step, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex gap-4 mb-6",
+                                        className: "flex gap-4",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex flex-col items-center",
@@ -558,25 +535,25 @@ function OrderTrackingDetailPage() {
                                                             className: "w-5 h-5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                                            lineNumber: 101,
+                                                            lineNumber: 93,
                                                             columnNumber: 23
                                                         }, this) : idx + 1
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                                        lineNumber: 92,
+                                                        lineNumber: 84,
                                                         columnNumber: 19
                                                     }, this),
                                                     idx < MILESTONE.length - 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: `w-1 h-10 ${idx < currentIndex ? "bg-primary" : "bg-muted"}`
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                                        lineNumber: 107,
+                                                        lineNumber: 99,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                                lineNumber: 91,
+                                                lineNumber: 83,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -586,33 +563,33 @@ function OrderTrackingDetailPage() {
                                                         children: STATUS_MAP[step].label
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                                        lineNumber: 116,
+                                                        lineNumber: 108,
                                                         columnNumber: 19
                                                     }, this),
                                                     step === data.status && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-sm text-muted-foreground",
-                                                        children: "Sedang diproses"
+                                                        children: data.status === "SELESAI" ? "Selesai" : data.status === "REVISI" ? "Perlu Revisi" : "Sedang diproses"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                                        lineNumber: 118,
+                                                        lineNumber: 110,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                                lineNumber: 115,
+                                                lineNumber: 107,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, step, true, {
                                         fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                        lineNumber: 90,
+                                        lineNumber: 82,
                                         columnNumber: 15
                                     }, this))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                            lineNumber: 86,
+                            lineNumber: 78,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -622,7 +599,7 @@ function OrderTrackingDetailPage() {
                                     children: "Detail Order"
                                 }, void 0, false, {
                                     fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                    lineNumber: 129,
+                                    lineNumber: 125,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -633,7 +610,7 @@ function OrderTrackingDetailPage() {
                                             value: data.company_name
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                            lineNumber: 132,
+                                            lineNumber: 128,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Detail, {
@@ -641,7 +618,7 @@ function OrderTrackingDetailPage() {
                                             value: data.npwp_number
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                            lineNumber: 133,
+                                            lineNumber: 129,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Detail, {
@@ -649,7 +626,7 @@ function OrderTrackingDetailPage() {
                                             value: data.employees_amount
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                            lineNumber: 134,
+                                            lineNumber: 130,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Detail, {
@@ -657,7 +634,7 @@ function OrderTrackingDetailPage() {
                                             value: data.license_type
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                            lineNumber: 135,
+                                            lineNumber: 131,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Detail, {
@@ -665,7 +642,7 @@ function OrderTrackingDetailPage() {
                                             value: data.user_amount
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                            lineNumber: 136,
+                                            lineNumber: 132,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Detail, {
@@ -673,7 +650,7 @@ function OrderTrackingDetailPage() {
                                             value: data.pic_name
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                            lineNumber: 137,
+                                            lineNumber: 133,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Detail, {
@@ -681,7 +658,7 @@ function OrderTrackingDetailPage() {
                                             value: data.pic_email
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                            lineNumber: 138,
+                                            lineNumber: 134,
                                             columnNumber: 15
                                         }, this),
                                         data.notes && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Detail, {
@@ -689,36 +666,36 @@ function OrderTrackingDetailPage() {
                                             value: data.notes
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                            lineNumber: 139,
+                                            lineNumber: 135,
                                             columnNumber: 30
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                                    lineNumber: 131,
+                                    lineNumber: 127,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                            lineNumber: 128,
+                            lineNumber: 124,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                    lineNumber: 84,
+                    lineNumber: 76,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-            lineNumber: 69,
+            lineNumber: 58,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-        lineNumber: 68,
+        lineNumber: 57,
         columnNumber: 5
     }, this);
 }
@@ -733,7 +710,7 @@ function Detail({ label, value }) {
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                lineNumber: 151,
+                lineNumber: 147,
                 columnNumber: 7
             }, this),
             " ",
@@ -742,13 +719,13 @@ function Detail({ label, value }) {
                 children: value
             }, void 0, false, {
                 fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-                lineNumber: 152,
+                lineNumber: 148,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/pages/requestor/order-tracking/orderTracking.tsx",
-        lineNumber: 150,
+        lineNumber: 146,
         columnNumber: 5
     }, this);
 }

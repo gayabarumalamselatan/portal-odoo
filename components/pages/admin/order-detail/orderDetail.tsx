@@ -5,18 +5,25 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
-import { useState } from "react";
+import { use, useEffect, useState } from "react";
 import { OrderStatus } from "@/types/order";
 import { useAdminOrderDetail } from "./useOrderDetail";
 import { useParams } from "next/navigation";
+import { getCookie } from "@/utils/cookies";
+import { Textarea } from "@/components/ui/textarea";
 
 const statusConfig: Record<OrderStatus, { label: string; color: string }> = {
-  DITERIMA: { label: "Menunggu", color: "bg-yellow-100 text-yellow-800" },
-  VALIDASI: { label: "Validasi Data", color: "bg-blue-100 text-blue-800" },
-  BILLING: { label: "Billing", color: "bg-purple-100 text-purple-800" },
-  PROSES: { label: "Proses", color: "bg-cyan-100 text-cyan-800" },
-  SELESAI: { label: "Selesai", color: "bg-green-100 text-green-800" },
+  "VALIDASI MANAGER": {
+    label: "Validasi Manager",
+    color: "bg-blue-100 text-blue-800",
+  },
+  "INTAKE ORDER": {
+    label: "Validasi Sales",
+    color: "bg-purple-100 text-purple-800",
+  },
+  SELESAI: { label: "Selesai", color: "bg-green-100 text-cyan-800" },
   REVISI: { label: "Perlu Revisi", color: "bg-red-100 text-red-800" },
+  DITOLAK: { label: "Ditolak", color: "bg-red-100 text-red-800" },
 };
 
 export function AdminOrderDetailPage() {
@@ -29,6 +36,13 @@ export function AdminOrderDetailPage() {
 
   const [adminComment, setAdminComment] = useState("");
   const [showCommentForm, setShowCommentForm] = useState(false);
+  const [role, setRole] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fecthCookies = getCookie("admin_auth");
+    const parsedCookies = fecthCookies ? JSON.parse(fecthCookies) : null;
+    setRole(parsedCookies?.role || null);
+  }, []);
 
   if (isLoading) {
     return <div className="p-10 text-center">Loading...</div>;
@@ -40,14 +54,14 @@ export function AdminOrderDetailPage() {
 
   const timeline = [
     { label: "Order Diterima", completed: true },
-    { label: "Validasi Data", completed: order.status !== "DITERIMA" },
     {
-      label: "Billing & Pembayaran",
-      completed: ["BILLING", "PROSES", "SELESAI"].includes(order.status),
+      label: "Validasi Data Oleh Manager",
+      completed:
+        order.status === "VALIDASI SALES" || order.status === "SELESAI",
     },
     {
-      label: "Proses Lisensi",
-      completed: ["PROSES", "SELESAI"].includes(order.status),
+      label: "Intake Order Oleh Sales",
+      completed: order.status === "SELESAI",
     },
     {
       label: "Aktivasi & Selesai",
@@ -56,7 +70,7 @@ export function AdminOrderDetailPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4">
+    <div className="min-h-screen bg-background py-5 px-4">
       <div className="max-w-6xl mx-auto">
         <Link
           href="/admin"
@@ -81,23 +95,47 @@ export function AdminOrderDetailPage() {
           {/* LEFT */}
           <div className="md:col-span-2 space-y-6">
             <Card className="p-6">
-              <h2 className="font-semibold mb-4">Informasi Perusahaan</h2>
+              <h2 className="font-semibold">Informasi Perusahaan</h2>
               <div className="grid grid-cols-2 gap-4">
                 <Data label="Nama" value={order.company_name} />
                 <Data label="NPWP" value={order.npwp_number} />
                 <Data label="Jumlah Karyawan" value={order.employees_amount} />
-                <Data label="Tanggal Order" value={order.created_at} />
+                <Data
+                  label="Tanggal Order"
+                  value={order.created_date.split("T")[0]}
+                />
               </div>
             </Card>
 
             <Card className="p-6">
-              <h2 className="font-semibold mb-4">Informasi PIC</h2>
+              <h2 className="font-semibold">Informasi PIC</h2>
               <div className="grid grid-cols-2 gap-4">
                 <Data label="Nama" value={order.pic_name} />
                 <Data label="Email" value={order.pic_email} />
                 <Data label="Telepon" value={order.pic_phone} />
               </div>
             </Card>
+
+            <Card className="p-6">
+              <h2 className="font-semibold">Informasi License</h2>
+              <div className="grid grid-cols-2 gap-4">
+                <Data label="Jenis Lisensi" value={order.license_type} />
+                <Data label="Jumlah User" value={order.user_amount} />
+              </div>
+            </Card>
+
+            {order.notes && (
+              <Card className="p-6">
+                <h2 className="font-semibold">Notes</h2>
+                <div>
+                  <Textarea
+                    value={order.notes}
+                    readOnly
+                    className="w-full border rounded-md p-3 bg-muted/50"
+                  />
+                </div>
+              </Card>
+            )}
 
             {showCommentForm && (
               <Card className="p-6 border-red-200 bg-red-50">
@@ -130,20 +168,56 @@ export function AdminOrderDetailPage() {
             )}
 
             <Card className="p-6">
-              <h2 className="font-semibold mb-4">Timeline</h2>
-              <div className="space-y-4">
-                {timeline.map((item, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <div
-                      className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                        item.completed ? "bg-primary text-white" : "bg-muted"
-                      }`}
-                    >
-                      {item.completed ? <CheckCircle2 size={16} /> : i + 1}
+              <h2 className="font-semibold">Timeline</h2>
+
+              <div className="relative">
+                {timeline.map((item, i) => {
+                  const isLast = i === timeline.length - 1;
+
+                  return (
+                    <div key={i} className="flex gap-4">
+                      {/* Left: Dot + Line */}
+                      <div className="flex flex-col items-center">
+                        {/* Dot */}
+                        <div
+                          className={`w-9 h-9 rounded-full flex items-center justify-center z-10
+                ${
+                  item.completed
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-muted text-muted-foreground"
+                }
+              `}
+                        >
+                          {item.completed ? (
+                            <CheckCircle2 className="w-5 h-5" />
+                          ) : (
+                            <span className="text-sm font-medium">{i + 1}</span>
+                          )}
+                        </div>
+
+                        {/* Line */}
+                        {!isLast && (
+                          <div
+                            className={`w-1 flex-1
+                  ${item.completed ? "bg-primary" : "bg-border"}
+                `}
+                          />
+                        )}
+                      </div>
+
+                      {/* Right: Content */}
+                      <div className="pb-10">
+                        <p
+                          className={`text-sm font-medium
+                ${item.completed ? "text-foreground" : "text-muted-foreground"}
+              `}
+                        >
+                          {item.label}
+                        </p>
+                      </div>
                     </div>
-                    <p className="text-sm">{item.label}</p>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </Card>
           </div>
@@ -151,11 +225,22 @@ export function AdminOrderDetailPage() {
           {/* RIGHT */}
           <div className="space-y-6">
             <Card className="p-6">
-              <h3 className="font-semibold mb-4">Aksi Admin</h3>
+              <h3 className="font-semibold mb-4">
+                Aksi{" "}
+                {role === "manager"
+                  ? "Manager"
+                  : role === "sales"
+                  ? "Sales"
+                  : "Admin"}
+              </h3>
               <Button
                 className="w-full mb-2"
                 disabled={updating}
-                onClick={() => updateStatus({ status: "VALIDASI" })}
+                onClick={() => {
+                  const nextStatus =
+                    role === "manager" ? "INTAKE ORDER" : "SELESAI";
+                  updateStatus({ status: nextStatus });
+                }}
               >
                 Approve
               </Button>

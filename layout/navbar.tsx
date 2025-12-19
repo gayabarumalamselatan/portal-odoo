@@ -56,6 +56,12 @@ export function LandingNavbar() {
             <Link href="#benefits" className="hover:text-foreground transition">
               Keunggulan
             </Link>
+            <Link
+              href="/order-tracking"
+              className="hover:text-foreground transition"
+            >
+              Track Order
+            </Link>
           </nav>
 
           {/* CTA */}
