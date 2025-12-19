@@ -16,7 +16,7 @@ export function getAdminStatusByRole(): string | null {
         return "VALIDASI MANAGER";
 
       case "sales":
-        return "VALIDASI SALES";
+        return "INTAKE ORDER";
 
       default:
         return null;

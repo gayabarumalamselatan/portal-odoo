@@ -83,7 +83,7 @@ function getAdminStatusByRole() {
             case "manager":
                 return "VALIDASI MANAGER";
             case "sales":
-                return "VALIDASI SALES";
+                return "INTAKE ORDER";
             default:
                 return null;
         }
@@ -520,7 +520,7 @@ const statusConfig = {
         color: "bg-blue-100 text-blue-800"
     },
     "INTAKE ORDER": {
-        label: "Validasi Sales",
+        label: "Intake Order Sales",
         color: "bg-purple-100 text-purple-800"
     },
     SELESAI: {

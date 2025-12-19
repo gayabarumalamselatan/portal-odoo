@@ -18,7 +18,7 @@ const statusConfig: Record<OrderStatus, { label: string; color: string }> = {
     color: "bg-blue-100 text-blue-800",
   },
   "INTAKE ORDER": {
-    label: "Validasi Sales",
+    label: "Intake Order Sales",
     color: "bg-purple-100 text-purple-800",
   },
   SELESAI: { label: "Selesai", color: "bg-green-100 text-cyan-800" },
@@ -56,8 +56,7 @@ export function AdminOrderDetailPage() {
     { label: "Order Diterima", completed: true },
     {
       label: "Validasi Data Oleh Manager",
-      completed:
-        order.status === "VALIDASI SALES" || order.status === "SELESAI",
+      completed: order.status === "INTAKE ORDER" || order.status === "SELESAI",
     },
     {
       label: "Intake Order Oleh Sales",

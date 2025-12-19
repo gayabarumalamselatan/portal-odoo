@@ -98,11 +98,8 @@
     --color-red-400: #ff6568;
     --color-red-600: #e40014;
     --color-red-800: #9f0712;
-    --color-yellow-100: #fef9c2;
-    --color-yellow-800: #874b00;
     --color-green-100: #dcfce7;
     --color-green-800: #016630;
-    --color-cyan-100: #cefafe;
     --color-cyan-800: #005f78;
     --color-blue-100: #dbeafe;
     --color-blue-800: #193cb8;
@@ -172,11 +169,8 @@
       --color-red-400: lab(63.7053% 60.7449 31.3109);
       --color-red-600: lab(48.4493% 77.4328 61.5452);
       --color-red-800: lab(33.7174% 55.8993 41.0293);
-      --color-yellow-100: lab(97.3564% -4.51407 27.344);
-      --color-yellow-800: lab(38.7484% 23.5833 51.4916);
       --color-green-100: lab(96.186% -13.8464 6.52362);
       --color-green-800: lab(37.4616% -36.7971 22.9692);
-      --color-cyan-100: lab(95.3146% -13.8285 -6.84733);
       --color-cyan-800: lab(36.5114% -17.1989 -21.6292);
       --color-blue-100: lab(92.0301% -2.24757 -11.6453);
       --color-blue-800: lab(30.2514% 27.7854 -70.2699);
@@ -722,10 +716,6 @@
 
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
-  }
-
-  .mt-3 {
-    margin-top: calc(var(--spacing) * 3);
   }
 
   .mt-4 {
@@ -1780,10 +1770,6 @@
     background-color: var(--card);
   }
 
-  .bg-cyan-100 {
-    background-color: var(--color-cyan-100);
-  }
-
   .bg-destructive {
     background-color: var(--destructive);
   }
@@ -1932,10 +1918,6 @@
     .bg-white\/70 {
       background-color: color-mix(in oklab, var(--color-white) 70%, transparent);
     }
-  }
-
-  .bg-yellow-100 {
-    background-color: var(--color-yellow-100);
   }
 
   .bg-gradient-to-br {
@@ -2388,16 +2370,8 @@
     color: var(--color-white);
   }
 
-  .text-yellow-800 {
-    color: var(--color-yellow-800);
-  }
-
   .capitalize {
     text-transform: capitalize;
-  }
-
-  .uppercase {
-    text-transform: uppercase;
   }
 
   .tabular-nums {
